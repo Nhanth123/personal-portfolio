@@ -14,6 +14,8 @@ import { NewTrainingComponent } from './training/new-training/new-training.compo
 import { PassTrainingComponent } from './training/pass-training/pass-training.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import {MatInputModule} from '@angular/material/input';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +26,8 @@ import {MatInputModule} from '@angular/material/input';
     NewTrainingComponent,
     PassTrainingComponent,
     HomepageComponent,
+    HeaderComponent,
+    SidenavListComponent,
     
   ],
   imports: [
