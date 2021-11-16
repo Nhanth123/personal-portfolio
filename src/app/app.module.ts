@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -13,9 +13,10 @@ import { CurrentTrainingComponent } from './training/current-training/current-tr
 import { NewTrainingComponent } from './training/new-training/new-training.component';
 import { PassTrainingComponent } from './training/pass-training/pass-training.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { DialogComponent } from './training/dialog/dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,7 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     HomepageComponent,
     HeaderComponent,
     SidenavListComponent,
-    
+    DialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,12 +38,10 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     MaterialModule,
     FlexLayoutModule,
     FormsModule,
-    MatInputModule
-
+    MatInputModule,
   ],
-  providers: [
-   
-  ],
-  bootstrap: [AppComponent]
+  providers: [],
+  bootstrap: [AppComponent],
+  entryComponents: [DialogComponent],
 })
-export class AppModule { }
+export class AppModule {}
